@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%- include('partials/head') %>
+</head>
+
+<body>
+	<main class="container">
+		<header>
+			<h1>Home</h1>
+		</header>
+		<% if (locals.signupMsg) { %>
+			<p>
+				<%= signupMsg %>
+			</p>
+			<% } %>
+
+				<section class="buttons">
+					<a href="/user/signup" class="btn">Sign Up</a>
+					<a href="/user/login" class="btn">Login</a>
+				</section>
+	</main>
+</body>
+
+</html>

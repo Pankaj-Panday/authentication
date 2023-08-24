@@ -1,0 +1,60 @@
+:root {
+	--body-bg-color: #f4f3ff;
+	--btn-bg-color: #855ef4;
+	--btn-hover-color: #743ceb;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-color: var(--background-color);
+	font-family: "Roboto", sans-serif;
+}
+
+.container {
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header {
+	padding: 25px 0;
+}
+
+section.buttons {
+	padding: 25px 20%;
+}
+
+.btn {
+	display: inline-block;
+	padding: 15px 60px;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	min-width: 190px;
+	margin: 0 10px;
+	background-color: var(--btn-bg-color);
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: var(--btn-hover-color);
+}

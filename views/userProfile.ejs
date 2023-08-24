@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Your Profile</h1>
+        </header>
+        <section class="user-details">
+            <h2>Your Name</h2>
+            <p>
+                <%= name %>
+            </p>
+            <h2>Your Email</h2>
+            <p>
+                <%= email %>
+            </p>
+            <a href="/user/logout" class="btn">Logout</a>
+        </section>
+    </main>
+</body>
+
+</html>
